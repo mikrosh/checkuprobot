@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.6.8 on win32)" generated="20191227 16:43:15.142" rpa="false">
-<suite id="s1" name="Checkup" source="C:\development\Checkup robot\tests\checkup.robot">
-<test id="s1-t1" name="Info Page Shoul Appearance">
+<robot generator="Robot 3.1.2 (Python 3.6.8 on win32)" generated="20191230 16:44:45.787" rpa="false">
+<suite id="s1" name="Checkup" source="C:\development\checkuprobot\tests\checkup.robot">
+<test id="s1-t1" name="All links and elements appearance on the page">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
-<arg>http://webiomedcheckup-test.kmis.ru</arg>
+<arg>https://www.google.com/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20191227 16:43:15.388" level="INFO">Opening browser 'chrome' to base url 'http://webiomedcheckup-test.kmis.ru'.</msg>
+<msg timestamp="20191230 16:44:46.034" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20191227 16:43:19.131" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20191227 16:43:19.131" endtime="20191227 16:43:19.131"></status>
+<msg timestamp="20191230 16:44:50.185" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20191230 16:44:50.185" endtime="20191230 16:44:50.185"></status>
 </kw>
-<msg timestamp="20191227 16:43:19.134" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 77
+<msg timestamp="20191230 16:44:50.188" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 77
 </msg>
-<status status="FAIL" starttime="20191227 16:43:15.388" endtime="20191227 16:43:19.134"></status>
+<status status="FAIL" starttime="20191230 16:44:46.034" endtime="20191230 16:44:50.188"></status>
 </kw>
+<doc>Pics links text signin block</doc>
 <tags>
-<tag>Smoke</tag>
+<tag>smoke</tag>
 </tags>
-<status status="FAIL" starttime="20191227 16:43:15.387" endtime="20191227 16:43:19.135" critical="yes">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 77
+<status status="FAIL" starttime="20191230 16:44:46.032" endtime="20191230 16:44:50.189" critical="yes">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 77
 </status>
 </test>
-<status status="FAIL" starttime="20191227 16:43:15.144" endtime="20191227 16:43:19.137"></status>
+<doc>Verify that all elements and links works correct on the landing page</doc>
+<status status="FAIL" starttime="20191230 16:44:45.819" endtime="20191230 16:44:50.191"></status>
 </suite>
 <statistics>
 <total>
@@ -32,13 +34,12 @@
 <stat pass="0" fail="1">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1">Smoke</stat>
+<stat pass="0" fail="1">smoke</stat>
 </tag>
 <suite>
 <stat pass="0" fail="1" id="s1" name="Checkup">Checkup</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20191227 16:43:15.137" level="WARN">Collapsing consecutive whitespace during parsing is deprecated. Fix ' Info Page Shoul Appearance' in file 'C:\development\Checkup robot\tests\checkup.robot' on line 5.</msg>
 </errors>
 </robot>
