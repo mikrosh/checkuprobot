@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.6.8 on win32)" generated="20191230 16:44:45.787" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.6.8 on win32)" generated="20191230 17:44:35.395" rpa="false">
 <suite id="s1" name="Checkup" source="C:\development\checkuprobot\tests\checkup.robot">
 <test id="s1-t1" name="All links and elements appearance on the page">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -8,25 +8,25 @@
 <arg>https://www.google.com/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20191230 16:44:46.034" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<msg timestamp="20191230 17:44:36.037" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20191230 16:44:50.185" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20191230 16:44:50.185" endtime="20191230 16:44:50.185"></status>
+<msg timestamp="20191230 17:44:40.009" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20191230 17:44:40.009" endtime="20191230 17:44:40.009"></status>
 </kw>
-<msg timestamp="20191230 16:44:50.188" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 77
+<msg timestamp="20191230 17:44:40.026" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 77
 </msg>
-<status status="FAIL" starttime="20191230 16:44:46.034" endtime="20191230 16:44:50.188"></status>
+<status status="FAIL" starttime="20191230 17:44:36.037" endtime="20191230 17:44:40.026"></status>
 </kw>
 <doc>Pics links text signin block</doc>
 <tags>
 <tag>smoke</tag>
 </tags>
-<status status="FAIL" starttime="20191230 16:44:46.032" endtime="20191230 16:44:50.189" critical="yes">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 77
+<status status="FAIL" starttime="20191230 17:44:36.036" endtime="20191230 17:44:40.027" critical="yes">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 77
 </status>
 </test>
 <doc>Verify that all elements and links works correct on the landing page</doc>
-<status status="FAIL" starttime="20191230 16:44:45.819" endtime="20191230 16:44:50.191"></status>
+<status status="FAIL" starttime="20191230 17:44:35.395" endtime="20191230 17:44:40.029"></status>
 </suite>
 <statistics>
 <total>
